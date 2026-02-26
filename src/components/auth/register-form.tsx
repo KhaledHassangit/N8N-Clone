@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -24,9 +23,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { authClient } from "@/lib/auth-client";
 import { RegisterFormValues, registerSchema } from "@/constants/validation";
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
+import { authClient } from "@/lib/auth-client";
 
 
 export function RegisterForm() {

@@ -1,6 +1,9 @@
 import { RegisterForm } from "@/components/auth/register-form"
+import { requireUnauth } from "@/lib/auth-utils";
 
-const RegisterPage = () => {
+const RegisterPage = async () => {
+    await requireUnauth();
+  
   return (
     <div>
         <RegisterForm/>
